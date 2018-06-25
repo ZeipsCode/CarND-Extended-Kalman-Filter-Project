@@ -1,4 +1,4 @@
-# Install script for directory: /media/zpr/5aa7062e-a1a2-4b29-85cb-5756318d57ee/Udacity/CarND-Extended-Kalman-Filter-Project/CarND-Extended-Kalman-Filter-Project
+# Install script for directory: /media/zpr/5aa7062e-a1a2-4b29-85cb-5756318d57ee/Github Stuff/CarND-Extended-Kalman-Filter-Project
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/media/zpr/5aa7062e-a1a2-4b29-85cb-5756318d57ee/Udacity/CarND-Extended-Kalman-Filter-Project/CarND-Extended-Kalman-Filter-Project/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/media/zpr/5aa7062e-a1a2-4b29-85cb-5756318d57ee/Github Stuff/CarND-Extended-Kalman-Filter-Project/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

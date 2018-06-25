@@ -1,3 +1,3 @@
-/media/zpr/5aa7062e-a1a2-4b29-85cb-5756318d57ee/Udacity/CarND-Extended-Kalman-Filter-Project/CarND-Extended-Kalman-Filter-Project/build/CMakeFiles/edit_cache.dir
-/media/zpr/5aa7062e-a1a2-4b29-85cb-5756318d57ee/Udacity/CarND-Extended-Kalman-Filter-Project/CarND-Extended-Kalman-Filter-Project/build/CMakeFiles/ExtendedKF.dir
-/media/zpr/5aa7062e-a1a2-4b29-85cb-5756318d57ee/Udacity/CarND-Extended-Kalman-Filter-Project/CarND-Extended-Kalman-Filter-Project/build/CMakeFiles/rebuild_cache.dir
+/media/zpr/5aa7062e-a1a2-4b29-85cb-5756318d57ee/Github Stuff/CarND-Extended-Kalman-Filter-Project/build/CMakeFiles/edit_cache.dir
+/media/zpr/5aa7062e-a1a2-4b29-85cb-5756318d57ee/Github Stuff/CarND-Extended-Kalman-Filter-Project/build/CMakeFiles/ExtendedKF.dir
+/media/zpr/5aa7062e-a1a2-4b29-85cb-5756318d57ee/Github Stuff/CarND-Extended-Kalman-Filter-Project/build/CMakeFiles/rebuild_cache.dir
