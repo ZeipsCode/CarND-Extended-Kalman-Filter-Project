@@ -64,9 +64,7 @@ public:
    */
   void UpdateEKF(const Eigen::VectorXd &z);
   
-  private:
-    
-    void UpdateY(const Eigen::VectorXd &y);
+  
 
 };
 
