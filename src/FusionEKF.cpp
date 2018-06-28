@@ -23,12 +23,12 @@ FusionEKF::FusionEKF() {
 
   //measurement covariance - laser
   R_laser_ << 0.0225, 0,
-        0, 0.0225;
+              0, 0.0225;
 
   //measurement covariance - radar
   R_radar_ << 0.09, 0, 0,
-        0, 0.0009, 0,
-        0, 0, 0.09;
+              0, 0.0009, 0,
+              0, 0, 0.09;
 
   /**
   TODO:
@@ -47,19 +47,19 @@ FusionEKF::FusionEKF() {
 
     ekf_.F_ = MatrixXd(4, 4);
     ekf_.F_ << 1, 0, 1, 0,
-          0, 1, 0, 1,
-          0, 0, 1, 0,
-          0, 0, 0, 1;
+                0, 1, 0, 1,
+                0, 0, 1, 0,
+                0, 0, 0, 1;
 
 
     //measurement matrix
     H_laser_ = MatrixXd(2, 4);
     Hj_ = MatrixXd(3, 4);      
     ekf_.H_ = MatrixXd(2, 4);
-    ekf_.H_ << 1, 0, 0, 0,
-          0, 1, 0, 0;      
     H_laser_ << 1, 0, 0, 0,
                 0, 1, 0, 0;      
+    ekf_.H_ = H_laser_;
+    
 
 }
 
@@ -93,7 +93,6 @@ void FusionEKF::ProcessMeasurement(const MeasurementPackage &measurement_pack) {
 
       double rho = measurement_pack.raw_measurements_[0];
       double phi = measurement_pack.raw_measurements_[1];
-      //double rho_dot = measurement_pack.raw_measurements_[2];
             
       double px = rho * cos(phi);
       double py = rho * sin(phi);
@@ -107,6 +106,7 @@ void FusionEKF::ProcessMeasurement(const MeasurementPackage &measurement_pack) {
       return;
     }
     else if (measurement_pack.sensor_type_ == MeasurementPackage::LASER) {
+
       /**
       Initialize state.
       */
